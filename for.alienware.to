@@ -1,0 +1,20 @@
+$TTL    604800
+@       IN      SOA     ns.alienware.to. hgrewal@alienware.to (
+                  5       ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800 )   ; Negative Cache TTL
+;
+; name servers - NS records
+     IN      NS      ns.alienware.to.
+
+; name servers - A records
+ns.alienware.to.             IN      A     192.168.2.15
+;dhcp.alienware.to.           IN      A     192.168.2.15
+
+; 10.0.0.0/24 - A records
+server3.alienware.to.        IN      A     10.0.0.3
+server4.alienware.to.        IN      A     10.0.0.4
+server5.alienware.to.        IN      A     10.0.0.5
+puppet.alienware.to.         IN      A     10.0.0.4
